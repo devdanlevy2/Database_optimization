@@ -78,3 +78,4 @@ Back to the `all_data` action.  This data structure has a number of tables conne
 * Write callbacks to maintain this foreign key appropriately.  Hint: you will need more than one.
 * Modify the report to use this new cached field instead of the actual id stored in the ancestor table.
 * Measure the improvement in runtime.
+# Database_optimization
