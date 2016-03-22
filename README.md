@@ -17,14 +17,14 @@ After completing this assignment, you should...
 
 ## stats
 
-* Time to seed the database 30.78 minutes (1847 seconds)
-* Time to perform the first record search 27.93 minutes (1676 seconds)  I ended up
+* Time to seed the database __30.78__ minutes (1847 seconds)
+* Time to perform the first record search __27.93__ minutes (1676 seconds)  I ended up
 performing this search twice and while google timeline was compiling stats it just
 shut down.
-* After adding indices to hits/sequences/genes the same search took 11.43 seconds.
+* After adding indices to hits/sequences/genes the same search took __11.43__ seconds.
 idle time was 1.83 seconds.  Rails time 7.21 seconds and 8.48 seconds recorded from
 the bottom of the page.  Running the migration took very little time as well.
-* Percent improvement in run time was 99.94%
+* Percent improvement in run time was __99.94%__
 
 ## Time Estimate For assignment
 
