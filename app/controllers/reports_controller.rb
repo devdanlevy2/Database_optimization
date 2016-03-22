@@ -22,6 +22,23 @@ class ReportsController < ApplicationController
     @memory_used = memory_in_mb
   end
 
+  def search_data
+    @start_time = Time.now
+
+    @sequences = []
+    @genes = []
+    @hits = []
+    @assembly = Assembly.all
+    @assembly.sequences.each do |s|
+      @sequences << s
+      s.genes.each do |g|
+        @genes << g
+        g.hits.each do |h|
+          @hits << h
+        end
+      end
+    end
+
   private def memory_in_mb
     `ps -o rss -p #{$$}`.strip.split.last.to_i / 1024
   end
